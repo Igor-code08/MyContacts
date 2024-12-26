@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/send_message"
+        android:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary" />
+
+    <!-- Номер телефона -->
+    <TextView
+        android:id="@+id/textView_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Поле ввода сообщения -->
+    <EditText
+        android:id="@+id/editText_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_message" />
+
+    <!-- Кнопка отправки сообщения -->
+    <Button
+        android:id="@+id/button_sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_message"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
